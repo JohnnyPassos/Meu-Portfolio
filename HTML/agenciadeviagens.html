@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnny Viagens</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+        }
+        .justified-text {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Johnny<br>Viagens<br>Explore o<br>Brasil!</h1>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Viajar<br>pelo<br>Brasil</h2>
+        <p class="justified-text">Viajar pelo Brasil é uma experiência única que proporciona a chance de explorar diversas culturas, paisagens e gastronomias. Desde as belezas naturais da Amazônia até as praias paradisíacas do Nordeste, cada estado tem sua própria história e encanto. A Johnny Viagens oferece pacotes completos que garantem conforto e segurança para sua jornada. Nossos preços são imbatíveis, permitindo que você descubra as maravilhas do Brasil sem comprometer o seu orçamento. Com um atendimento personalizado e uma equipe pronta para atender suas necessidades, a Johnny Viagens é a sua melhor escolha para planejar a viagem dos sonhos. Venha conhecer as melhores opções de turismo, desde as grandes cidades até os destinos menos explorados. Acreditamos que viajar é uma forma de viver experiências inesquecíveis, e queremos fazer parte da sua história. Não perca tempo, escolha a Johnny Viagens e comece a planejar a sua próxima aventura agora mesmo!</p>
+
+        <h2 class="text-center mt-5">Destinos Turísticos</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="destino1.jpg" class="img-fluid" alt="Destino 1">
+                <p>Praia do Forte, BA</p>
+            </div>
+            <div class="col-md-3">
+                <img src="destino2.jpg" class="img-fluid" alt="Destino 2">
+                <p>Lençóis Maranhenses, MA</p>
+            </div>
+            <div class="col-md-3">
+                <img src="destino3.jpg" class="img-fluid" alt="Destino 3">
+                <p>Chapada Diamantina, BA</p>
+            </div>
+            <div class="col-md-3">
+                <img src="destino4.jpg" class="img-fluid" alt="Destino 4">
+                <p>Fernando de Noronha, PE</p>
+            </div>
+        </div>
+
+        <h2 class="text-center mt-5">Formas de Pagamento</h2>
+        <ul class="text-center">
+            <li>Cartão em até 12x sem juros</li>
+            <li>Pix</li>
+            <li>Boleto</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>&copy; <span id="currentYear"></span> Johnny Viagens. Todos os direitos reservados.</p>
+    </div>
+
+    <script>
+        // Atualiza o ano automaticamente
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

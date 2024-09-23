@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minha Página Responsiva</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white text-center p-3">
+        <h1> Johnny Games </h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Corpo -->
+    <main>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="bg-light p-4">
+                        <h2>Jogos de Xbox</h2>
+                        <p>Os jogos de Xbox são conhecidos por sua vasta variedade de títulos, desde exclusividades como a série *Halo* e *Gears of War* até jogos multiplataforma com gráficos impressionantes e jogabilidade fluida. O Xbox também é elogiado pelos serviços como o Xbox Game Pass, que permite acesso a uma biblioteca extensa de jogos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-light p-4">
+                        <h2>Jogos de Playstation</h2>
+                        <p>O Playstation oferece uma seleção rica de jogos, com muitos títulos exclusivos como *The Last of Us*, *God of War* e *Spider-Man*. O Playstation é conhecido pela qualidade narrativa e visual dos seus jogos, além de ser o lar de muitos jogos aclamados pela crítica e pelo público.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-light p-4">
+                        <h2>Jogos de Nintendo</h2>
+                        <p>A Nintendo é famosa por suas franquias icônicas, como *Super Mario*, *The Legend of Zelda* e *Pokémon*. Os jogos da Nintendo se destacam pelo design criativo, diversão acessível e uma abordagem única que agrada jogadores de todas as idades. Além disso, os consoles como o Nintendo Switch proporcionam uma experiência inovadora, tanto no modo portátil quanto no modo de mesa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; <span id="ano-atual"></span> Johnny Games. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts Bootstrap e JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para exibir o ano atual -->
+    <script>
+        document.getElementById("ano-atual").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
+
+

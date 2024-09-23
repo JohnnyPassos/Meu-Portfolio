@@ -1,0 +1,22 @@
+// Atividade Prática
+
+let bebida = 1;
+
+switch (bebida) {
+
+case 1 :
+    console.log ( "Café: preço R$5,50");
+    break
+case 2 :
+    console.log ("Leite : preço R$2,50");
+    break
+
+case 3 :
+    console.log ( "Chá : preço R$4,25")    
+    break
+
+default : 
+
+     console.log ( "A escolha deve ser feita entre café, leite ou chá")
+
+}

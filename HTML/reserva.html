@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Viagem</title>
+</head>
+<body>
+    <h1 style="color:blue;text-align: center;" > Dados de Reserva de Viagem </h1> <br><br>
+    <form action="reserva_confirmada.html" method="get">
+    
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <label>
+                Nome:<br>
+                <input type="text" name="nome" required>
+            </label><br><br>
+
+            <label>
+                Email:<br>
+                <input type="email" name="email" required>
+            </label><br><br>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Serviços Desejados</legend>
+
+            <label><input type="checkbox" name="servicos" value="passagens"> Compra de Passagens</label><br>
+            <label><input type="checkbox" name="servicos" value="hospedagem"> Reserva de Hospedagem</label><br>
+            <label><input type="checkbox" name="servicos" value="veiculos"> Aluguel de Veículos</label><br><br>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Forma de Pagamento</legend>
+
+            <label><input type="radio" name="pagamento" value="credito" required> Cartão de Crédito</label><br>
+            <label><input type="radio" name="pagamento" value="boleto"> Boleto</label><br>
+            <label><input type="radio" name="pagamento" value="pix"> PIX</label><br><br>
+
+            <label>
+                Prazo de Pagamento:<br>
+                <select name="prazo">
+                    <option value="avista">À Vista</option>
+                    <option value="cinco-vezes">Cinco Vezes Sem Juros</option>
+                    <option value="dez-vezes">Dez Vezes Com Juros</option>
+                </select>
+            </label><br><br>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Comentários Adicionais</legend>
+            
+            <label>
+                Comentários:<br>
+                <textarea name="comentarios" rows="4" cols="50" placeholder="Digite seus comentários ou informações adicionais aqui..."></textarea>
+            </label><br><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar Reserva">
+    </form>
+</body>
+</html>
